@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/test.css' %}">
+<h1>qwertz</h1>
+
+<p><strong>QWERTZ –</strong> symboliczna nazwa układu liter na klawiaturze alfabetu rozszerzonego maszyny do pisania i komputera, wzięta od pierwszych sześciu liter pod rzędem cyfr, patrząc od lewej.</p>
+
+<p>Jest to układ używany w większości krajów Europy Środkowej (Niemcy, Czechy, Węgry, Austria, Słowacja, Szwajcaria), w tym również w Polsce jako klawiatura maszynistki. Różni się od układu QWERTY zamianą liter Y i Z oraz rozmieszczeniem niektórych innych znaków.</p>
+
+<p>Polska odmiana (podobnie jak odmiana czeska i węgierska) powstała na bazie układu niemieckiego. Pierwsze maszyny do pisania ze znakami charakterystycznymi dla języka polskiego (<em>ą, ć, ę, ł, ń, ó, ś, ź, ż</em>) powstały po przeróbce maszyn niemieckich. Czcionki z polskimi znakami umieszczono w miejsce liter alfabetu niemieckiego (<em>ä, ö, ü, ß</em>) i kilku znaków specjalnych. Z tego też względu, polskie maszyny do pisania nie miały niektórych dużych liter specyficznych dla języka polskiego (brak wystarczającej liczby czcionek do podmiany).</p>
+
+<h2>Mamy też inne układy klawiatur:</h2>
+
+<ul style="list-style-type:circle">
+  <li>QWERTY - najczęściej używany na świecie</li>
+  <li>AZERTY - używany w krajach francuskojęzycznych</li>
+  <li>klawiatura Dvoraka - układ alternatywny dla QWERTY (zoptymalizowany pod kątem języka angielskiego), który jednak nie przyjął się na świecie</li>
+</ul> 
+
+<a href="https://pl.wikipedia.org/wiki/Klawiatura_Dvoraka">Więcej o klawiaturze Dvoraka</a><br>
+<br>
+
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<caption>Używane układy klawiatur w krajach europejskich</caption>
+<table style="width:40%">
+  <tr>
+    <th>Typ klawiatury</th>
+    <th>Kraj</th> 
+  </tr>
+  <tr>
+    <td>QWERTY</td>
+    <td>Polska, Czechy, Słowacja, Norwegia, Szwecja, Finlandia, Wielka Brytania, Hiszpania, Portugalia, Włochy, Islandia</td>
+  </tr>
+  <tr>
+    <td>QWERTZ</td>
+    <td>Niemcy, Czechy, Węgry, Austria, Słowacja, Szwajcaria</td>
+  </tr>
+  <tr>
+    <td>AZERTY</td>
+    <td>Francja, Belgia</td>
+  </tr>
+</table>
+
+{% endblock content %}
